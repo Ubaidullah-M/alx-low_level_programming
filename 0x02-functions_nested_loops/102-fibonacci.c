@@ -13,13 +13,13 @@ int main(void)
 	unsigned long c;
 
 	printf("%lu, ", a);
-	for (count = 1; count <= 50; count++)
+	for (count = 1; count < 50; count++)
 	{
 		c = a + b;
 		printf("%lu", c);
 		a = b;
 		b = c;
-		if (count == 50)
+		if (count == 49)
 			printf("\n");
 		else
 			printf(", ");
