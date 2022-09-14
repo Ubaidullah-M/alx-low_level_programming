@@ -15,9 +15,7 @@ int main(void)
 	for (b = 2; b < 4000000; b++)
 	{
 		if (b % 2 == 0)
-		{
 			total += b;
-		}
 		c = b;
 		b += a;
 		a = c;
