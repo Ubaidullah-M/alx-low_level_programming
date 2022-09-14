@@ -2,6 +2,7 @@
 /**
  * _isalpha - check the letter 'c' is lower or upper case
  *
+ * @c: the int to print
  * Return: 1 (if lower), 0 (if upper)
  */
 int _isalpha(int c)

@@ -2,7 +2,7 @@
 /**
  * _islower - check the code
  *
- * Description: check if 'c' is lower case
+ * @c: the int to print
  *
  * Return: Always 0
  */
