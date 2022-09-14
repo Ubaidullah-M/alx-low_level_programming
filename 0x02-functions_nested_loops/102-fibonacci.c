@@ -8,8 +8,8 @@
 int main(void)
 {
 	int count;
-	unsigned long a = 0;
-	unsigned long b = 1;
+	unsigned long a = 1;
+	unsigned long b = 2;
 	unsigned long c;
 
 	printf("%lu, ", a);
