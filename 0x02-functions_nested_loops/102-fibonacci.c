@@ -8,25 +8,25 @@
 int main(void)
 {
 	int count;
-	long int a = 1;
-	long int b = 2;
-	long int c;
+	unsigned long a = 0;
+	unsigned long b = 1;
+	unsigned long c;
 
 	printf("%lu, ", a);
-	for (count = 2; count <= 50; count++)
+	for (count = 2; count < 50; count++)
 	{
-		if (count == 50)
+		c = a + b;
+		printf("%lu", c);
+		a = b;
+		b = c;
+		if (count == 49)
 		{
-			printf("%lu\n", b);
+			printf("\n");
 		}
 		else
 		{
-			printf("%lu, ", b);
+			printf(", ");
 		}
-		c = b;
-		b += a;
-		a = c;
-		count++;
 	}
 	return (0);
 }
