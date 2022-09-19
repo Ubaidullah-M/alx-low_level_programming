@@ -9,19 +9,23 @@
  */
 void rev_string(char *s)
 {
-	char *start_c, *end_c, c;
-	int i, count;
-	int length = 0;
+	int count = 0, i, j;
+	char *str, temp;
 
-	for (i = 0; s[i]; i++)
+	while (count >= 0)
 	{
-		length++;
+		if (s[count] == '\0')
+			break;
+		count++;
 	}
-	count = length;
-	start_c = s;
-	end_c = s;
-	for (i = 0; i < count - 1; i++)
+	str = s;
+	for (i = 0; i < (count - 1); i++)
 	{
-		end_c++;
+		for (j = i + 1; j > 0; j--)
+		{
+			temp = *(str + j);
+			*(str + j) = *(str + (j - 1));
+			*(str + (j - 1)) = temp;
+		}
 	}
 }
